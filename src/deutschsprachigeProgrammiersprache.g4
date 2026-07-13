@@ -1,8 +1,8 @@
 grammar deutschsprachigeProgrammiersprache;
 
-program : zeile+ ;
+program : zeilenNummerierung+ ;
 
-zeile : 'Zeile' NUMBER ':' anweisung+ ;
+zeilenNummerierung : 'Zeile' NUMBER ':' anweisung+ ; // unterscheidung zwischen Zeile für die Nummerierung und Zeile für die Sprunganweisungen
 
 anweisung : intergerDeklaration |  wertzuweisungAddition | wertzuweisungSubtraktion | stopAnweisung | sprunganweisung | eingabe | ausgabe;
 
@@ -12,13 +12,15 @@ wertzuweisungAddition : ALPHANUMERIC ':=' ALPHANUMERIC '+' ALPHANUMERIC ';';
 
 wertzuweisungSubtraktion : ALPHANUMERIC ':=' ALPHANUMERIC '-' ALPHANUMERIC ';';
 
-stopAnweisung : STOPP ';';
+stopAnweisung : 'STOPP' | 'HALT' ';';
 
 sprunganweisung : unbedingteSprunganweisung | bedingteSprunganweisung;
 
-unbedingteSprunganweisung : 'GEHE ZU ' zeile ';';
+unbedingteSprunganweisung : 'GEHE ZU ' zeilenReferenzierung ';';
 
-bedingteSprunganweisung : 'WENN(' ALPHANUMERIC '=' NUMBER ')DANN GEHE ZU' zeile ';';
+bedingteSprunganweisung : 'WENN(' ALPHANUMERIC '=' NUMBER ')DANN GEHE ZU' zeilenReferenzierung ';';
+
+zeilenReferenzierung : 'Zeile' NUMBER;
 
 eingabe : 'EINGABE' ALPHANUMERIC ';' ;
 
@@ -26,5 +28,4 @@ ausgabe : 'SCHREIBE' ALPHANUMERIC ';' ;
 
 NUMBER : [0-9]+;
 ALPHANUMERIC : [a-zA-Z0-9]+;
-STOPP : 'STOPP' | 'HALT' ;
 WS    : [ \t\r\n]+ -> skip ; // für die Akzeptanz von Leerzeichen
