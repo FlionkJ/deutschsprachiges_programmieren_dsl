@@ -1,4 +1,7 @@
-// Generated from C:/Users/admin/IdeaProjects/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+// Generated from /home/kim/Dokumente/IntelliJ/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+
+package generation;
+
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
