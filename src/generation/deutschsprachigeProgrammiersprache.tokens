@@ -15,17 +15,17 @@ T__13=14
 NUMBER=15
 ALPHANUMERIC=16
 WS=17
-'Zeile'=1
-':'=2
-':='=3
-';'=4
-'+'=5
-'-'=6
-'STOPP'=7
-'HALT'=8
-'GEHE ZU '=9
-'WENN('=10
-'='=11
-')DANN GEHE ZU'=12
+':'=1
+':='=2
+';'=3
+'+'=4
+'-'=5
+'STOPP'=6
+'HALT'=7
+'GEHE ZU '=8
+'WENN('=9
+'='=10
+')DANN GEHE ZU'=11
+'Zeile'=12
 'EINGABE'=13
 'SCHREIBE'=14
