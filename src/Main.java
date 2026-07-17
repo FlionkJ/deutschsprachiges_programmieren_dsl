@@ -17,7 +17,7 @@ public class Main {
 
         CharStream input = null;
         try {
-            input = CharStreams.fromPath(Paths.get("exampleProgram", "testProgramDsl.txt"));
+            input = CharStreams.fromPath(Paths.get("exampleProgram", "testProgramDsl2.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

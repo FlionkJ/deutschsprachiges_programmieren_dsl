@@ -74,8 +74,10 @@ public class ProgramVisitor extends deutschsprachigeProgrammierspracheBaseVisito
             if (ctx.sprunganweisung().unbedingteSprunganweisung() != null) {
                 return new UnconditionalJumpInstruction(Integer.parseInt(ctx.sprunganweisung().unbedingteSprunganweisung().zeilenReferenzierung().NUMBER().getText()));
             } else if (ctx.sprunganweisung().bedingteSprunganweisung() != null) {
+                // HIER DIE ÄNDERUNG: Operator auslesen und mitgeben
                 return new ConditionalJumpInstruction(
                         ctx.sprunganweisung().bedingteSprunganweisung().ALPHANUMERIC().getText(),
+                        ctx.sprunganweisung().bedingteSprunganweisung().vergleichsOperator().getText(),
                         Integer.parseInt(ctx.sprunganweisung().bedingteSprunganweisung().NUMBER().getText()),
                         Integer.parseInt(ctx.sprunganweisung().bedingteSprunganweisung().zeilenReferenzierung().NUMBER().getText())
                 );

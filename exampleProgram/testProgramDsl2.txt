@@ -1,0 +1,9 @@
+Zeile 0: EINGABE X;
+Zeile 1: EINGABE Y;
+Zeile 2: WENN(Y>0)DANN GEHE ZU Zeile 5;
+Zeile 3: Y := Y - Y;
+Zeile 4: GEHE ZU Zeile 8;
+Zeile 5: WENN(X<0)DANN GEHE ZU Zeile 7;
+Zeile 6: Y := Y + X;
+Zeile 7: SCHREIBE Y;
+Zeile 8: HALT;

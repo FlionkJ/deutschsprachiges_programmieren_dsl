@@ -1,4 +1,4 @@
-// Generated from /home/kim/Dokumente/IntelliJ/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+// Generated from D:/Daten Jeremias/Bildung/FHDW Hannover/Semester 4/26Q3 Informationsinfrastrukturen - Unit 1/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
 
 package generation;
 
@@ -105,4 +105,11 @@ public class deutschsprachigeProgrammierspracheBaseVisitor<T> extends AbstractPa
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitAusgabe(deutschsprachigeProgrammierspracheParser.AusgabeContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx) { return visitChildren(ctx); }
 }
