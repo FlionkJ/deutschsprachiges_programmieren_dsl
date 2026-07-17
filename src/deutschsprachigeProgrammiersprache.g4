@@ -22,7 +22,7 @@ sprunganweisung : unbedingteSprunganweisung | bedingteSprunganweisung;
 
 unbedingteSprunganweisung : 'GEHE ZU ' zeilenReferenzierung ';';
 
-bedingteSprunganweisung : 'WENN(' ALPHANUMERIC '=' NUMBER ')DANN GEHE ZU' zeilenReferenzierung ';';
+bedingteSprunganweisung : 'WENN(' ALPHANUMERIC vergleichsOperator NUMBER ')DANN GEHE ZU' zeilenReferenzierung ';';
 
 zeilenReferenzierung : 'Zeile' NUMBER;
 
@@ -33,3 +33,4 @@ ausgabe : 'SCHREIBE' ALPHANUMERIC ';' ;
 NUMBER : [0-9]+;
 ALPHANUMERIC : [a-zA-Z0-9]+;
 WS    : [ \t\r\n]+ -> skip ; // für die Akzeptanz von Leerzeichen
+vergleichsOperator : '=' | '<' | '>' ;
