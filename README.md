@@ -2,7 +2,7 @@
 
 ## Wahl des genutzten Plugins ##
 Wir haben uns für die Verwendung von ANTLR für die Entwicklung der DSL entschieden. 
-Damit konnten wir auf die verwendung von Eclipse verzichten und bieten einen 
+Damit konnten wir auf die Verwendung von Eclipse verzichten und bieten einen 
 alternativen Lösungsweg zu dem Lösungsweg mit Xtext und Eclipse. 
 
 ## Entwicklung der Grammatik ##
@@ -16,4 +16,11 @@ Im Nächsten Schritt haben wir dann die Zeilenreferenzierung als strukturellen B
 die Definition der Zeilennummerierung geschrieben. So konnten wir erreichen, 
 dass die Zeilenreferenzierung ohne das Terminalsymbol ":" akzeptiert wird und 
 die Zeilennummerierung mit dem Terminalsymbol endet.
+
+## Reflexion der Ergebnisse ##
+Wir hatten am Anfang etwas Probleme damit, uns in dem neuen Plugin zurechtzufinden. 
+Aber danach hatten wir kaum noch Probleme, was mit unter auch an der Verwendung von IntelliJ
+statt Eclipse gelegen hat. Zudem war die Ordnerstruktur des Projektes deutlich übersichtlicher 
+als die Ordnerstruktur in dem Xtext Projekt aus der Mathevorlesung. 
+
 
