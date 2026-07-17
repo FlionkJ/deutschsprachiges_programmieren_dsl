@@ -6,7 +6,7 @@ package generation;
 
 program : zeilenNummerierung+ ;
 
-zeilenNummerierung : zeilenReferenzierung ':' anweisung+ ; // unterscheidung zwischen Zeile für die Nummerierung und Zeile für die Sprunganweisungen
+zeilenNummerierung : zeilenReferenzierung ':' anweisung ;
 
 anweisung : intergerDeklaration |  wertzuweisungAddition | wertzuweisungSubtraktion | stopAnweisung | sprunganweisung | eingabe | ausgabe;
 
