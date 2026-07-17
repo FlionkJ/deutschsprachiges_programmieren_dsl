@@ -1,4 +1,4 @@
-// Generated from /home/kim/Dokumente/IntelliJ/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+// Generated from D:/Daten Jeremias/Bildung/FHDW Hannover/Semester 4/26Q3 Informationsinfrastrukturen - Unit 1/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
 
 package generation;
 
@@ -170,6 +170,18 @@ public class deutschsprachigeProgrammierspracheBaseListener implements deutschsp
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAusgabe(deutschsprachigeProgrammierspracheParser.AusgabeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

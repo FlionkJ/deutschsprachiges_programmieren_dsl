@@ -1,4 +1,4 @@
-// Generated from /home/kim/Dokumente/IntelliJ/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+// Generated from D:/Daten Jeremias/Bildung/FHDW Hannover/Semester 4/26Q3 Informationsinfrastrukturen - Unit 1/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
 
 package generation;
 
@@ -90,4 +90,10 @@ public interface deutschsprachigeProgrammierspracheVisitor<T> extends ParseTreeV
 	 * @return the visitor result
 	 */
 	T visitAusgabe(deutschsprachigeProgrammierspracheParser.AusgabeContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link deutschsprachigeProgrammierspracheParser#vergleichsOperator}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx);
 }

@@ -1,4 +1,4 @@
-// Generated from /home/kim/Dokumente/IntelliJ/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
+// Generated from D:/Daten Jeremias/Bildung/FHDW Hannover/Semester 4/26Q3 Informationsinfrastrukturen - Unit 1/deutschsprachiges_programmieren_dsl/src/deutschsprachigeProgrammiersprache.g4 by ANTLR 4.13.2
 
 package generation;
 
@@ -139,4 +139,14 @@ public interface deutschsprachigeProgrammierspracheListener extends ParseTreeLis
 	 * @param ctx the parse tree
 	 */
 	void exitAusgabe(deutschsprachigeProgrammierspracheParser.AusgabeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link deutschsprachigeProgrammierspracheParser#vergleichsOperator}.
+	 * @param ctx the parse tree
+	 */
+	void enterVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link deutschsprachigeProgrammierspracheParser#vergleichsOperator}.
+	 * @param ctx the parse tree
+	 */
+	void exitVergleichsOperator(deutschsprachigeProgrammierspracheParser.VergleichsOperatorContext ctx);
 }
