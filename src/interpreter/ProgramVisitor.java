@@ -29,9 +29,7 @@ public class ProgramVisitor extends deutschsprachigeProgrammierspracheBaseVisito
     @Override
     public Void visitZeilenNummerierung(deutschsprachigeProgrammierspracheParser.ZeilenNummerierungContext ctx) {
         int lineNumber = Integer.parseInt(ctx.zeilenReferenzierung().NUMBER().getText());
-        for (deutschsprachigeProgrammierspracheParser.AnweisungContext anweisungContext : ctx.anweisung()) {
-            programLines.add(new ProgramLine(lineNumber, createInstruction(anweisungContext)));
-        }
+        programLines.add(new ProgramLine(lineNumber, createInstruction(ctx.anweisung())));
         return null;
     }
 

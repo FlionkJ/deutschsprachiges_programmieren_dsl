@@ -10,7 +10,7 @@ public class ConditionalJumpInstruction implements Instruction {
 
     public ConditionalJumpInstruction(String variable, String operator, int value, int lineNumber) {
         this.variable = variable;
-        this.operator = operator; // <-- NEU
+        this.operator = operator;
         this.value = value;
         this.lineNumber = lineNumber;
     }
