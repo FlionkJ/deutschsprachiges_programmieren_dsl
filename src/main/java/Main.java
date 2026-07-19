@@ -37,6 +37,7 @@ public class Main {
         programVisitor.visit(tree);
         List<ProgramLine> programLines = programVisitor.getProgramLines();
 
+        //Execute program via Interpreter
         Interpreter interpreter = new Interpreter(programLines);
         interpreter.execute();
     }

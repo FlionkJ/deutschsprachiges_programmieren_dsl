@@ -1,0 +1,8 @@
+Zeile 0: R:=0;
+Zeile 1: EINGABE X;
+Zeile 2: WENN(x=0)DANN GEHE ZU Zeile 7;
+Zeile 3: R := R + X;
+Zeile 4: X := X - X;
+Zeile 5: GEHE ZU Zeile 2;
+Zeile 6: SCHREIBE R;
+Zeile 7: HALT;

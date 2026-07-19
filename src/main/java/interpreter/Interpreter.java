@@ -17,7 +17,7 @@ public class Interpreter {
     private final Scanner scanner = new Scanner(System.in);
 
     private int programCounter = 0;
-    boolean running = true;
+    private boolean running = true;
 
     public Interpreter(List<ProgramLine> programLines) {
         this.programLines = programLines;
@@ -58,5 +58,12 @@ public class Interpreter {
         assign(assignmentInstruction);
     }
 
+    public boolean getRunning(){
+        return this.running;
+    }
+
+    public int getProgramCounter() {
+        return this.programCounter;
+    }
 
 }
